@@ -29,8 +29,8 @@ const data = [
     heading: 'SpaceBoi vs. The World',
     year: '2023',
     link: 'https://amyflo.itch.io/spaceboi',
-    tools: 'ChucK, ChuGL',
-    type: 'Tool, Visual Effects, Interactive',
+    tools: 'Unity, Figma, Adobe Creative Cloud',
+    type: 'Game, UX/UI',
     subheading: 'New onboarding, level system, and system feedback UI for a game about saving the planet.',
   },
   {
