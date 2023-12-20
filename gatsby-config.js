@@ -3,10 +3,26 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `wizard`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `Amy Lo`,
+    siteUrl: `https://www.amyflo.com`
   },
-  plugins: ["gatsby-transformer-remark", {
+  plugins: [
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Amy Lo`,
+        short_name: `Amy Lo`,
+        description: `Personal website for Amy Lo.`,
+        lang: `en`,
+        display: `standalone`,
+        icon: `src/images/puzzle.gif`,
+        start_url: `/`,
+        background_color: `#663399`,
+        theme_color: `#fff`,
+      },
+    },
+    "gatsby-transformer-remark", 
+    'gatsby-plugin-theme-ui', {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "pages",

@@ -1,0 +1,14 @@
+@import url("https://use.typekit.net/qvt2wpj.css");
+body{
+    font-variation-settings: "wght" 100, "wdth" 100;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    
+}
+
+/* a:hover{
+    text-decoration: underline;
+} */
