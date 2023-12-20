@@ -6,7 +6,7 @@ import puzzle from "../images/puzzle.gif"
 const paragraphs = [
   "Wherever there’s an interesting problem to solve, I’ll go – whether that means deciphering complex algorithms, painting a North Star vision, or imagining end-to-end user experiences.",
   "I pull inspiration from an unconventional background in game design, neuroscience, and engineering. I know what it takes to put the pieces together. I thrive building scrappy and building at scale.",
-  "I’m passionate about experiences that are grounded in the psychology of everyday people. I currently help teach graduate-level classes on game design and designing for behavior change at Stanford University."
+  "I’m passionate about grounding my work in the psychology of everyday people. I currently help teach graduate-level classes on game design and designing for behavior change at Stanford University."
 ];
 
 const email = 'amyflo@stanford.edu';
