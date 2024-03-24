@@ -17,10 +17,9 @@ const theme = {
         "monospace": "Menlo, monospace"
     },
     "fontSizes": [
-        12,
-        14,
         16,
         20,
+        24,
         32,
         48,
         64,
@@ -54,28 +53,28 @@ const theme = {
             "fontFamily": "heading",
             "lineHeight": "heading",
             "fontWeight": "heading",
-            "fontSize": 5
+            "fontSize": 4
         },
         "h2": {
             "color": "text",
             "fontFamily": "heading",
             "lineHeight": "heading",
             "fontWeight": "heading",
-            "fontSize": 4
+            "fontSize": 3
         },
         "h3": {
             "color": "text",
             "fontFamily": "heading",
             "lineHeight": "heading",
             "fontWeight": "heading",
-            "fontSize": 3
+            "fontSize": 2
         },
         "h4": {
             "color": "text",
             "fontFamily": "heading",
             "lineHeight": "heading",
             "fontWeight": "heading",
-            "fontSize": 2
+            "fontSize": 1
         },
         "h5": {
             "color": "text",
@@ -95,7 +94,8 @@ const theme = {
             "color": "text",
             "fontFamily": "body",
             "fontWeight": "body",
-            "lineHeight": "body"
+            "lineHeight": "body",
+            "fontSize": 0
         },
         "a": {
             "color": "primary"

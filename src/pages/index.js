@@ -76,7 +76,7 @@ const IndexPage = () => {
           {paragraphs.map((paragraph) => (
             <Heading  py={3} as='h2'>{paragraph}</Heading>
           ))}
-          <Text>🚧 This site is under construction! Come back in Jan 2024 for updates. 🚧</Text>
+          <Text>🚧 This site is under construction! Come back in 2024 for updates. 🚧</Text>
         </Box>
       </Container>
       <Container sx={{ p: ['4', '5'] }} >
@@ -102,6 +102,7 @@ const IndexPage = () => {
     </main>
   )
 }
+
 const cardStyles = {
   borderRadius: 'default',
   boxShadow: 'default',

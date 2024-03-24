@@ -20,14 +20,64 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#fff`,
       },
+    
     },
-    "gatsby-transformer-remark", 
-    'gatsby-plugin-theme-ui', {
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-image`,
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 6000,
+            },
+          },
+        ],
+      },
+    },
+    
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          `gatsby-remark-responsive-iframe`,
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 6000
+            },
+          },
+        ],
+      },
+    },
+    
+
+    'gatsby-plugin-theme-ui', 
+    {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "pages",
-      "path": "./src/pages/"
+      "path": `${__dirname}/src/pages/`
     },
     __key: "pages"
-  }]
+    }, 
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/images/`,
+      },
+    },
+    { // record
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/images/record/`,
+      },
+    },
+]
 };
