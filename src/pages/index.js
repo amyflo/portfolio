@@ -2,6 +2,7 @@ import * as React from "react"
 import "../styles/styles.css"
 import { Heading, Text, Grid, Divider, Progress, Image, Badge, Box, Flex, NavLink, Card, Container } from "theme-ui"
 import puzzle from "../images/puzzle.gif"
+import { Link } from "gatsby";
 
 const paragraphs = [
   "Wherever there’s an interesting problem to solve, I’ll go – whether that means deciphering complex algorithms, painting a North Star vision, or imagining end-to-end user experiences.",
@@ -76,7 +77,7 @@ const IndexPage = () => {
           {paragraphs.map((paragraph) => (
             <Heading  py={3} as='h2'>{paragraph}</Heading>
           ))}
-          <Text>🚧 This site is under construction! Come back in 2024 for updates. 🚧</Text>
+          <Text>🚧 This site is under construction! Come back in Jan 2024 for updates. 🚧</Text>
         </Box>
       </Container>
       <Container sx={{ p: ['4', '5'] }} >
@@ -99,10 +100,10 @@ const IndexPage = () => {
           ))}
         </Grid>
       </Container>
+      <Link to="/record">Example case study: Record</Link>
     </main>
   )
 }
-
 const cardStyles = {
   borderRadius: 'default',
   boxShadow: 'default',
