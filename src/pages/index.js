@@ -29,8 +29,8 @@ const data = [
     heading: 'SpaceBoi vs. The World',
     year: '2023',
     link: 'https://amyflo.itch.io/spaceboi',
-    tools: 'ChucK, ChuGL',
-    type: 'Tool, Visual Effects, Interactive',
+    tools: 'Unity, Figma, Adobe Creative Cloud',
+    type: 'Game, UX/UI',
     subheading: 'New onboarding, level system, and system feedback UI for a game about saving the planet.',
   },
   {
@@ -76,7 +76,7 @@ const IndexPage = () => {
           {paragraphs.map((paragraph) => (
             <Heading  py={3} as='h2'>{paragraph}</Heading>
           ))}
-          <Text>🚧 This site is under construction! Come back in Jan 2024 for updates. 🚧</Text>
+          <Text>🚧 This site is under construction! Come back in 2024 for updates. 🚧</Text>
         </Box>
       </Container>
       <Container sx={{ p: ['4', '5'] }} >
@@ -102,6 +102,7 @@ const IndexPage = () => {
     </main>
   )
 }
+
 const cardStyles = {
   borderRadius: 'default',
   boxShadow: 'default',
