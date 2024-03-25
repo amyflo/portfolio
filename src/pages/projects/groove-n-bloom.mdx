@@ -1,0 +1,50 @@
+import Navigation from "../../components/Navigation";
+import Footer from "../../components/Footer";
+
+import { AspectRatio, Grid, Container, Box } from "theme-ui"
+
+
+<Navigation/>
+
+![](../../images/groove-n-bloom.webp)
+
+<Grid
+      columns={[1, '1fr 1fr']}
+      gap={4}
+      py={6}
+      px={4}
+      sx={{
+        margin: '0 auto',
+      }}
+    >
+<Box p={4}>
+# Groove n' Bloom
+## Dynamic beat sequencer that models the lifecycle of plants. 
+
+</Box>
+<Box>
+<AspectRatio ratio={16 / 9}>
+
+<iframe width="100%" height="100%" src="https://www.youtube.com/embed/UwEDb3IMif4" title="Groove n&#39; Bloom | CS476A: Beat Sequencer (HW3) | Amy Lo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</AspectRatio>
+</Box>
+</Grid>
+
+
+
+
+<Container sx={{ p: ['2', '6'] }}  bg="muted">
+
+### “Groove n’ Bloom” is a beat sequencer inspired by my love of gardening. Over the last quarter, I have slowly been amassing a small army of plants (now close to 20) in my dorm room by my windowsill. The wonder and peace I experienced just by seeing my plants make little progress, day by day, inspired me to keep going myself. Simply put, my beat sequencer models the growth cycle of a typical plant. To remove sound from the world is to kill the plant. To grow the plant is to change its sound. 
+
+#### Tools Used: ChuCK, ChuGL (audiovisual programming software)
+
+#### Duration: 2 weeks
+
+[View full documentation](https://medium.com/@amyflo/groove-n-bloom-cs476a-hw-3-beat-sequencer-d80f617fa5ed)
+
+[GitHub](https://github.com/amyflo/groove-n-bloom)
+
+</Container>
+
+<Footer/>
