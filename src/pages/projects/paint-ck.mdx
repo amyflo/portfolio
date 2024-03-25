@@ -1,0 +1,51 @@
+import Navigation from "../../components/Navigation";
+import Footer from "../../components/Footer";
+
+import { AspectRatio, Grid, Container, Box } from "theme-ui"
+
+
+<Navigation/>
+
+![](../../images/paint.ck/cover.webp)
+
+<Grid
+      columns={[1, '1fr 1fr']}
+      gap={4}
+      py={6}
+      px={4}
+      sx={{
+        margin: '0 auto',
+      }}
+    >
+<Box p={4}>
+# paint.ck
+## `paint.ck` is a pixel art drawing beat sequencer built using ChucK and ChuGL. Each note on the 12-note chromatic scale is represented by a unique color, in roughly rainbow order, fully functional both as a musical and drawing application.
+
+</Box>
+<Box>
+<AspectRatio ratio={16 / 9}>
+
+<iframe width="100%" height="100%" src="https://www.youtube.com/embed/slL0Rl0X4yU" title="paint.ck | CS476A Final Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</AspectRatio>
+</Box>
+</Grid>
+
+
+
+
+<Container sx={{ p: ['2', '6'] }}  bg="muted">
+
+### Each note on the 12-note chromatic scale is represented by a unique color, in roughly rainbow order. If you’ve ever been curious what the chuck logo sounds like in pixel notes, this is for you! `paint.ck` features colors, erase, and play/pause functionality that makes it feel like traditional digital art tools that allow you to press and hold.
+
+
+#### Tools Used: ChuCK, ChuGL (audiovisual programming software)
+
+#### Duration: 2 weeks
+
+[View full documentation](https://medium.com/@amyflo/paint-ck-cs476a-hw-4-final-project-e1e638765bcc)
+
+[GitHub](https://github.com/amyflo/paint.ck)
+
+</Container>
+
+<Footer/>

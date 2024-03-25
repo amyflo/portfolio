@@ -3,10 +3,6 @@ import "../styles/styles.css"
 import { Heading, Text, Container, Box, Flex } from "theme-ui"
 import { Link } from "gatsby";
 
-const email = 'amyflo@stanford.edu';
-const linkedin = 'https://linkedin.com/in/amyflo';
-const resume = 'https://drive.google.com/file/d/1gd2ReAsK08T-LJYuzyq6NZ4qYhV4EEkU/view?usp=sharing'
-
 function Navigation() {
     return (
         <nav>
@@ -20,9 +16,9 @@ function Navigation() {
                 </Link>
 
                 <Flex sx={{ justifyContent: 'flex-end', flex: 1 }}>
-                    {/* <Link to="/work"> */}
-                        <Text sx={navLinkStyles} as="h3" px="2" py="1" mx="2">Work 🔒</Text>
-                    {/* </Link> */}                    
+                    <Link to="/work">
+                        <Text sx={navLinkStyles} as="h3" px="2" py="1" mx="2">Work</Text>
+                    </Link>                    
 
                     <Link to="/about"><Text sx={navLinkStyles} as="h3" px="2" py="1" mx="2">About</Text></Link>
                 

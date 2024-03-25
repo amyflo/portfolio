@@ -1,0 +1,56 @@
+import Navigation from "../../../components/Navigation"
+import Footer from "../../../components/Footer"
+import { AspectRatio, Heading, Grid, Container, Box } from "theme-ui"
+
+<Navigation/>
+
+<Container p={6} py="3" bg="#F9CB40">
+
+# Creative Code
+
+## Creative coding blurs the lines between programming and art. I leverage code to generate visual or auditory experiences.
+
+</Container>
+
+
+<Grid
+      columns={[1, 2]}
+      gap={4}
+      py={4}
+      px={6}
+      sx={{
+        margin: '0 auto',
+      }}
+    >
+
+<Box>
+<AspectRatio ratio={16 / 9}>
+![](../../../images/paint.ck/cover.webp)
+</AspectRatio>
+### [`paint.ck`](/projects/paint-ck)
+</Box>
+
+
+<Box>
+<AspectRatio ratio={16 / 9}>
+![](../../../images/groove-n-bloom.webp)
+</AspectRatio>
+### [Groove n' Bloom](/projects/groove-n-bloom)
+</Box>
+
+<Box>
+<AspectRatio ratio={16 / 9}>
+![](../../../images/pixel-vessel/featured.jpeg)
+</AspectRatio>
+### [Pixel Vessel](/projects/pixel-vessel)
+</Box>
+<Box>
+<AspectRatio ratio={16 / 9}>
+![](../../../images/neurogenesis.png)
+</AspectRatio>
+### [Neurogenesis](/projects/neurogenesis)
+</Box>
+
+</Grid>
+
+<Footer/>
