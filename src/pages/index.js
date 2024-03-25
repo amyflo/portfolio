@@ -1,6 +1,6 @@
 import * as React from "react"
 import "../styles/styles.css"
-import { Heading, Text, Grid, Divider, Progress, Image, Badge, Box, Flex, NavLink, Card, Container, Button } from "theme-ui"
+import { Heading, Text, Grid, AspectRatio, Divider, Progress, Image, Badge, Box, Flex, NavLink, Card, Container, Button } from "theme-ui"
 import puzzle from "../images/home.png"
 import { Link } from "gatsby";
 import Navigation from "../components/Navigation";
@@ -16,16 +16,22 @@ const IndexPage = () => {
           columns={[1, 1, 1, 2]}
           gap="0"
           m="0"
-          bg="black"
+        bg="#BCED09"
         >
+        <AspectRatio
+          ratio={1 / 1}
+          >
+
           <img width="100%" src={puzzle} alt="puzzle" />
-          <Box p="4" bg="blue">
+          </AspectRatio>
+        <Box
+         p="4" bg="blue">
             <Flex sx={{ flexDirection: 'column', justifyContent: 'flex-end' }} p="4" color="white" >
               <Heading as="h1" m="4">Amy Lo is a multidisciplinary designer and developer.</Heading>
               <Heading as="h1" m="4">She is graduating soon from Stanford with a bachelor's degree in Psychology ('24) and a master's degree in Computer Science, Human-Computer Interaction ('25). Incoming UX Design intern @ Amazon, Summer 2024.</Heading>
             <Link to="/record"><Text as="h3" m="4"><u>Read my latest case study</u></Text></Link>
             </Flex>
-          </Box>
+        </Box>
           {/* <Box p="4" bg="blue">
             <Heading as="h3" m="4" color="white">UI/UX</Heading>
             <Heading as="h1" m="4" color="white">Record</Heading>
