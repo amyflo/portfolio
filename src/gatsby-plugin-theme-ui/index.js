@@ -126,7 +126,16 @@ const theme = {
         },
         "img": {
             "maxWidth": "100%"
-        }
+        },
+        buttons: {
+            primary: {
+                color: 'white',
+                bg: 'black',
+                '&:hover': {
+                    bg: 'black',
+                }
+            },
+        },
     }
 }
 

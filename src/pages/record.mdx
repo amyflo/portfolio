@@ -1,9 +1,12 @@
 import { Alert, Container, Grid, Box } from 'theme-ui'
+import Navigation from "../components/Navigation";
+import Footer from "../components/Footer";
 
+<Navigation/>
 !["Image"](../images/record/record-featured.jpeg)
 
 
-<Container sx={{ p: ['2', '6'] }}>
+<Container sx={{ p: ['2', '6'] }} >
 # Record: Analyze your emotions musically
 
 
@@ -30,6 +33,7 @@ import { Alert, Container, Grid, Box } from 'theme-ui'
       sx={{
         margin: '0 auto',
       }}
+     
     >
 <Box>
 ## Solution
@@ -47,7 +51,7 @@ import { Alert, Container, Grid, Box } from 'theme-ui'
 
 
 During our needfinding process, we focused on musicians. We interviewed 5 people including a professional musician, two casual musicians, a music producer/radio DJ, and an individual who played music in their childhood but stopped later.
-
+{/* 
 <Grid
       columns={[1, '1fr 1fr 1fr']}
       gap={1}
@@ -58,7 +62,7 @@ During our needfinding process, we focused on musicians. We interviewed 5 people
     ![Elliott home studio](../images/record/a1-empathy-maps.jpg)
     ![Elliott home studio](../images/record/a1-empathy-maps.jpg)
     ![Elliott home studio](../images/record/a1-empathy-maps.jpg)
-</Grid>
+</Grid> */}
 
 Our first step toward unpacking our needfinding interviews was to create empathy maps. We did this exercise for 3 out of our 5 interviews. After analyzing our empathy maps, we noted down interesting observations, inferences, and insights from our interviews. We focused on three insights for further exploration:
 
@@ -69,7 +73,7 @@ Our first step toward unpacking our needfinding interviews was to create empathy
 </Container>
 ![Elliott home studio](../images/record/a1-empathy-maps.jpg)
 
-<Container sx={{ p: ['2', '6'] }} bg="muted">
+<Container sx={{ p: ['2', '6'] }}>
 
 ## POVs & HMWs
 
@@ -164,7 +168,7 @@ We met Elliott, a professional guitarist, music Youtuber, and new dad in his mid
     ![Elliott home studio](../images/record/hmw/3.png)
 </Container>
 
-<Container sx={{ p: ['2', '6'] }}>
+<Container sx={{ p: ['2', '6'] }}  bg="muted">
 
 
 ## Experience Prototyping
@@ -405,3 +409,5 @@ In addition, we aim to reduce loading delays experienced during navigation to th
 </Grid>
 
 </Container>
+
+<Footer/>
