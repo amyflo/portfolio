@@ -36,11 +36,19 @@ const theme = {
         "heading": 1.125
     },
     "colors": {
-        "text": "#000",
+        "dark": "#081313",
+        "white": "#fefefa",
+        "text": "#081313",
         "background": "#fff",
-        "primary": "#07c",
-        "secondary": "#30c",
-        "muted": "#f6f6f6"
+        "blue": "#2F52E0",
+        "green": "#BCED09",
+        "primary": "#2F52E0",
+        "secondary": "#BCED09",
+        "muted": "#f6f6f6",
+        "orange": "#F9CB40",
+        "purple": "#C45BAA",
+        "lightblue": "#5DA9E9",
+        "red": "#FF715B",
     },
     "styles": {
         "root": {
@@ -130,10 +138,21 @@ const theme = {
         buttons: {
             primary: {
                 color: 'white',
-                bg: 'black',
+                bg: 'dark',
                 '&:hover': {
-                    bg: 'black',
+                    bg: 'dark',
                 }
+            },
+        },
+        badges: {
+            primary: {
+                color: 'white',
+                bg: 'blue',
+            },
+            outline: {
+                color: 'blue',
+                bg: 'transparent',
+                boxShadow: 'inset 0 0 0 1px',
             },
         },
     }
