@@ -9,7 +9,7 @@ const resume = 'https://drive.google.com/file/d/1gd2ReAsK08T-LJYuzyq6NZ4qYhV4EEk
 
 function Footer() {
     return (
-        <Container px="6" py="4" bg="black" color="white">
+        <Container px="6" py="4" bg="dark" color="white">
             <Flex as="nav" sx={{ alignItems: 'center', justifyContent: 'space-between', flexDirection: ['column', 'row'] }}>
           
                 <Box>
