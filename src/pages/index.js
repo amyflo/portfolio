@@ -52,7 +52,7 @@ const IndexPage = () => {
             <Heading as="h2" m="4" >Android game creation tool to make and play games. Built with Java and Android studio.</Heading>
           </Box>
         </Link>
-        <Link to="/">
+        <Link to="/projects/spaceboi">
           <Box p="4" bg="green">
             <Heading as="h3" m="4" >Game Design</Heading>
             <Heading as="h1" m="4" >SpaceBoi vs. the World 🔒</Heading>
