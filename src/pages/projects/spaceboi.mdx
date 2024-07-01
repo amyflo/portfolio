@@ -1,6 +1,132 @@
 import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
+import { Alert, Container, Grid, Box } from 'theme-ui'
 
 <Navigation/>
+
+
+<Grid
+      columns={[1, '1fr 1fr']}
+      gap={4}
+      py={6}
+      px={4}
+      sx={{
+        margin: '0 auto',
+      }}
+    >
+<Box p={4}>
+# SpaceBoi vs. the World
+## A digital guide to harnessing the power of open data at your university by the Stanford Open Data Project and Northwestern Open Data Initiative.
+
+</Box>
+<Box>
+<Box sx={{border: "0.2rem solid blue"}}ratio={16 / 9}>
+![](../../images/open-data-handbook/2.png)
+</Box>
+</Box>
+</Grid>
+
+<Container sx={{ p: ['2', '6'] }}  bg="muted">
+
+### I was brought on the project as a UI designer to enhance the immersion and usability of the game. I worked as a game developer occasionally to build the narrative and dialogue off the game and hook up user interfaces in Unity. 
+
+#### Tools Used: Unity, Figma, Adobe Illustrator
+
+#### Duration: 2 weeks
+
+[Play game](https://amyflo.itch.io/spaceboi)
+
+</Container>
+
+## Concept
+Would you sacrifice your planet in order to find love? This isn’t a question most of us have to answer in our lifetime. However, Spaceboi is not as fortunate. In order to reach Spacegirl when their planets’ orbits are at their closest, Spaceboi needs to build a rocket using resources collected from his planet. However, his relentless extraction of resources carries risks, as he could irrevocably harm his planet’s delicate ecosystem.
+
+### Educational Goal
+Much of the learning in Spaceboi vs. the World occurs naturally from the player’s interactions with the ecosystem. The planet in our game is designed to react quickly and noticeably to Spaceboi’s actions. This forces the player to be keenly aware of the planet’s ecological state and determine whether they can extract more resources. Representative of modern human capitalism, Spaceboi needs to find a balance between industry and conservation so he can reach his goals without irrevocably harming the planet. The game aims to instill this attitude in players, encouraging them to make sober, moderated decisions about their real-life consumption and production.
+
+### Gameplay Mechanics
+
+Player Feedback: Actions and consequences
+
+Spaceboi vs. the World models a simple planet’s ecosystem and climate. The player’s actions (extraction of resources, use of advanced tools, interaction with fauna, etc.) affect the planet’s systems, which feed back to the player as random events, changes in spawn rates, changes in the behavior of fauna, etc. The player performs actions that affect the planet, causing the planet to react in ways that affect the player and help or hinder his efforts to reach Spacegirl.
+
+### Core Game Loop
+
+Core Game Loop: Repeating chapter-day structure
+
+Our game uses a repeating chapter-day structure to progress. Each chapter represents a day in Spaceboi's quest to build the rocket. The player must collect resources, interact with the ecosystem, and manage the planet's health daily. The balance between resource extraction and conservation is crucial for progression.
+
+<Container sx={{ p: ['2', '6'] }} bg="muted">
+## User Testing
+
+I conducted user testing with four individuals to assess and improve the user interface design of the game. Before my involvement, the game lacked structured UI design. During the testing sessions, I focused on identifying areas of confusion and inconsistency by gathering feedback from playtesters on their interactions with the interface, in-game actions, and their experience with keyboard and mouse controls. 
+
+</Container>
+
+<Container sx={{ p: ['2', '6'] }} bg="muted">
+
+## Principles
+
+Due to the tight timeframe of the project, I immediately focused on high-fidelity design to accelerate development. My approach was guided by two core tenets:
+1. **Cohesion**: Ensuring that all design elements work harmoniously together to support a seamless user experience. This involved aligning the visual and functional aspects of the interface to enhance usability and clarity.
+2. **Feedback**: Implementing clear and informative feedback mechanisms to keep users informed about their actions and the outcomes within the game. This included integrating visual cues and interactive elements that provide immediate responses to user interactions.
+
+</Container>
+
+## Key Contributions
+
+### Help Menu
+From our playtests, we learned that controls were confusing to the player and not immediately clear. Thus, I designed a help menu that provided easy access to controls and instructions, improving game usability.
+
+Help menu communicates all controls used in the game. However, anything that is accessible using a hot key is also accessible through a click for heightened usability.
+The help menu directly supports game cohesion by addressing a specific pain point identified during playtests: confusing controls. Clear and accessible feedback is essential in the design of the help menu. It informs players about the game's controls and mechanics in a straightforward manner, addressing their initial confusion and empowering them to make informed decisions during gameplay.
+
+### Quota Menu
+During our playtests, players expressed a desire for clearer visibility into their current resources and the objectives they needed to accomplish, stating how “It’s nice if you can see how much of whatever you currently have. I don’t know how much we actually need to reach.” 
+In response, I developed a quota menu that systematically outlines resource collection goals for each chapter, spanning multiple days of gameplay. 
+
+The quota menu helps players understand how much of each resource they need.
+After each day in a chapter, the day’s recap is updated with their progress toward their goals. 
+
+End of day quota is updated with visual feedback (checkboxes) when they have completed a goal.
+By clearly outlining resource collection goals, the quota menu helped players stay focused and motivated, enhancing their engagement with the game. The quota menu directly supports the core loop of the game by providing essential information that aligns with player objectives and game progression. It clarifies resource collection goals after each day's gameplay, ensuring players are informed and motivated to achieve these objectives.
+
+### Environmental Alerts
+During playtests, players expressed confusion about the cause-and-effect relationships in the game world, particularly regarding the impact of their actions on the environment. For example, when using a resource such as dynamite, they wondered “does it increase the chances of an earthquake?” 
+
+
+Example of an alert appearing in the top right of the screen 
+
+I designed unobtrusive alerts that notify players of environmental changes, explaining the cause and impact. The two effects are earthquakes and high winds, which are influenced by overmining rocks and harvesting too many trees in the game, respectively. 
+
+Environmental alerts reinforce game cohesion by directly linking player actions to tangible consequences in the game world. In addition, the alerts give clear feedback to not only notify players of immediate changes but also explain the underlying causes.
+
+### Clickable Interactions
+I noticed that our playtesters loved to click – and so do I. We added clickable interactions to all our icons on the screen and made a new, clickable inventory to check your item pickups. Clickable interactions provide immediate feedback to players, confirming their actions and reinforcing the responsiveness of the game. In doing so, I created a cohesive interaction model throughout the game. This uniformity ensures that players experience consistent interaction patterns, which reduces cognitive load and enhances usability.
+
+From the onboarding tutorial, players are instructed to left click to chop down a tree. 
+I also changed the mining interaction from pressing “E” to left-clicking, as we noticed this was the dominant strategy that playtesters first tried to mine. Changing the mining interaction from pressing "E" to left-clicking aligns with the principle of affordance. Left-clicking is a natural and intuitive action for players, as evidenced by playtesters' immediate preference for this interaction method. This change improves the clarity of interaction options and makes gameplay more intuitive and user-friendly. 
+
+### Onboarding Tutorial
+Lastly, I created an interactive tutorial to guide new players through basic game actions, ensuring a smooth start. Players are guided through the actions of mining and adding their items to their inventory. The tutorial offers immediate feedback by guiding players through each step of the actions. Clear feedback also prevents frustration and enhances engagement by ensuring that players feel competent and supported as they learn the game's mechanics. 
+
+On start, players are introduced to SpaceDoc, a mentor-like figure that gives comedic relief and hints. 
+
+When players enter the world, they are given clear, scaffolded instructions on how to interact with objects. 
+The interactive tutorial contributes to overall cohesion by seamlessly integrating into the game's onboarding process. It aligns with the core gameplay loop by focusing on fundamental actions like mining and inventory management, which are essential for players to master early on, without breaking player immersion.
+
+<Container sx={{ p: ['2', '6'] }} bg="muted">
+## Learnings
+As a new team member to the project, I worked rapidly to contribute work and create actionable milestones. This taught me how to quickly onboard and communicate our design changes in the game in a hackathon-like environment. 
+
+Due to time, there were several features I designed that we were not able to build.  One of these features was a tool upgrade screen, where tools would be unlocked by collecting resources. Instead, we auto unlocked tools after each chapter. 
+
+A simple mockup of the tool upgrade screen
+
+Like many effective game designers, I prioritized what elements of our game were most core to the gameplay, prioritizing communication in our system to the user through our core game loop. 
+
+</Container>
+<Footer/>
+
 
 <Footer/>
