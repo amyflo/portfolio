@@ -38,6 +38,13 @@ const IndexPage = () => {
             <Heading as="h2" m="4" color="white">Music-centric journalling app that analyze your emotions musically. Built with React Native.</Heading>
           </Box>
         </Link>
+        <Link to="/projects/stamply">
+          <Box p="4" bg="green">
+            <Heading as="h3" m="4" >UI/UX</Heading>
+            <Heading as="h1" m="4" >Stamply</Heading>
+            <Heading as="h2" m="4" >Digital loyalty app that redefines how users engage with small businesses</Heading>
+          </Box>
+        </Link>
         <Link to="/projects/paint-ck">
           <Box p="4" bg="orange">
           <Heading as="h3" m="4">Creative Code</Heading>
@@ -52,13 +59,7 @@ const IndexPage = () => {
             <Heading as="h2" m="4" >Android game creation tool to make and play games. Built with Java and Android studio.</Heading>
           </Box>
         </Link>
-        <Link to="/projects/spaceboi">
-          <Box p="4" bg="green">
-            <Heading as="h3" m="4" >Game Design</Heading>
-            <Heading as="h1" m="4" >SpaceBoi vs. the World 🔒</Heading>
-            <Heading as="h2" m="4" >[Coming soon!] Digital game about climate conservation. Built with Unity.</Heading>
-          </Box>
-        </Link>
+
        
         </Grid>
       <Footer />
