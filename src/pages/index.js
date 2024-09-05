@@ -27,7 +27,7 @@ const IndexPage = () => {
          p={1} bg="blue">
             <Flex sx={{ flexDirection: 'column', justifyContent: 'flex-end' }} p="4" color="white" >
               <Heading as="h1" m={[1, 4]}>Amy F. Lo is a multidisciplinary designer and developer.</Heading>
-            <Heading as="h1" m={[1, 4]}>She is graduating soon from Stanford with a bachelor's degree in Psychology ('24) and a master's degree in Computer Science, Human-Computer Interaction ('25). Incoming UX Design intern @ Amazon, Summer 2024.</Heading>
+            <Heading as="h1" m={[1, 4]}>She is graduating soon from Stanford with a master's degree in Computer Science, Human-Computer Interaction ('25). UX Design intern @ Amazon Prime, Summer 2024.</Heading>
             <Link to="/work"><Text as="h3" m="4"><u>View my work</u></Text></Link>
             </Flex>
         </Box>
